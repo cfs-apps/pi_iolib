@@ -1,9 +1,12 @@
-{ "app": {
+{
+
+   "app": {
    
    "title": "PI_IOLIB",
    "version": "0.9.0",
-   "owner": "OpenSatkit",
-   "url": "https://github.com/OpenSatKit-Apps/pi_iolib",
+   "supplier": "Open STEMware",
+   "copyright": "bitValence",
+   "url": "https://github.com/cfs-apps/pi_iolib",
 
    "description": [
       "Raspberry Pi I/O Library"
@@ -19,10 +22,11 @@
       "load_addr": 0,
       "exception-action": 0,
       "app-framework": "osk",
-      "tables": [],
-      "cmd-mid": ""
-   }
-   
+      "tables": []
+   },
+
+   "requires": []
+  
 }}
 
 
