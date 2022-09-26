@@ -34,7 +34,7 @@
 
 int peripheral_map(volatile uint32_t **map, uint32_t offset, uint32_t size)
 {
-	printf("osk: peripheral_map() - Peripheral Base 0x%08lX, Offset 0x%08X, Size 0x%04X\n", PERIPHERAL_BASE, offset, size);  //osk - CHaged Base from %08X to %08lX
+	printf("osk: peripheral_map() - Peripheral Base 0x%08X, Offset 0x%08X, Size 0x%04X\n", (unsigned int)PERIPHERAL_BASE, (unsigned int)offset, size);  //osk - Added unsigned int casts
 	if (peripheral_ismapped(*map, size)) {
 		printf("osk: peripheral_map() - Already mapped\n");
 		return 0; // already mapped
