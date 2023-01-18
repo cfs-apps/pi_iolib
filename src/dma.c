@@ -39,7 +39,7 @@ volatile struct dma_channel_register_map *DMAC14 = NULL;
 
 volatile struct dma_register_map *DMA = NULL;
 
-int _mbox_fd; //OSK
+int _mbox_fd; //osk
 
 int dma_map(void)
 {
@@ -79,7 +79,7 @@ void dma_unmap(void)
 
 void dma_configure(dma_channel_config *config)
 {
-    config->channel->CS = config->dma_register.cs_register << 16; //OSK
+    config->channel->CS = config->dma_register.cs_register << 16; //osk
 }
 void dma_enable(volatile struct dma_channel_register_map *channel)
 {

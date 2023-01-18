@@ -67,9 +67,9 @@ typedef struct {
             uint32_t: 4; // reserved
             uint32_t PANIC_PRIORITY: 4;
             uint32_t PRIOTITY: 4;
-        } dma_bitfield;           //OSK
+        } dma_bitfield;           //osk
         uint32_t cs_register;
-    } dma_register;               //OSK
+    } dma_register;               //osk
 } dma_channel_config;
 
 extern volatile struct dma_channel_register_map *DMAC0;
@@ -102,7 +102,7 @@ uint32_t dma_virt_to_phy(dma_phy_mem_blk *block, void *addr);
 void dma_alloc_phy_mem(dma_phy_mem_blk *block, unsigned int size);
 void dma_free_phy_mem(dma_phy_mem_blk *block);
 
-//OSK int _mbox_fd;
+//osk int _mbox_fd;
 
 #ifdef  __cplusplus
 }
