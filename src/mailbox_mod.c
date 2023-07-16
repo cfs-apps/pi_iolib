@@ -166,7 +166,7 @@ void *mbox_map(uint32_t addr, unsigned int size)
     void *map = mmap(NULL, size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, addr);
     if (map == MAP_FAILED) {
         perror_inf();
-		perror("Failed mmaping peripheral");
+		perror("Failed mapping peripheral");
         close(fd);
 		return NULL;
 	}
@@ -184,7 +184,7 @@ void mbox_unmap(void *ptr, unsigned int size)
 
     if (munmap(ptr, size) == -1) {
         perror_inf();
-		perror("Failed to munmap");
+		perror("Failed to unmap mailbox");
 	}
 }
 

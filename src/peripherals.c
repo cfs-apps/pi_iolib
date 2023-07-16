@@ -54,7 +54,7 @@ int peripheral_map(volatile uint32_t **map, uint32_t offset, uint32_t size)
 
 	if (*map == MAP_FAILED) {
 		perror_inf();
-		perror("Failed mmaping peripheral");
+		perror("Failed mapping peripheral");
 		return -1;
 	}
 
@@ -66,7 +66,7 @@ void peripheral_unmap(volatile uint32_t *map, uint32_t size)
 	if (peripheral_ismapped(map, size)) {
 		if (munmap((void *)map, size) < 0) {
 			perror_inf();
-			perror("Failed munmapping peripheral");
+			perror("Failed unmapping peripheral");
 		}
 	}
 }
