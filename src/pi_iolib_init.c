@@ -41,7 +41,7 @@
 uint32 PI_IOLIB_Init(void)
 {
 
-   OS_printf("PI_IOLIB Initialized. Version 0.9.0\n");
+   OS_printf("PI_IOLIB Initialized. Version 1.0.0\n");
    
    return OS_SUCCESS;
 
