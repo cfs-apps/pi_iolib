@@ -45,29 +45,29 @@ static const char *Version = "1.1.0";
 ** Entry function
 **
 */
-uint32 PI_IOLIB_Init(void)
+uint32 RPI_IOLIB_Init(void)
 {
    uint8 ChipCnt = 0; 
    
    #ifdef BCM2836_7
    ChipCnt++;
-   OS_printf("PI_IOLIB Version %s Initialized for BCM2836_7\n", Version);
+   OS_printf("RPI_IOLIB Version %s Initialized for BCM2836_7\n", Version);
    #endif
    #ifdef BCM2835
    ChipCnt++;
-   OS_printf("PI_IOLIB Version %s Initialized for BCM2835\n", Version);
+   OS_printf("RPI_IOLIB Version %s Initialized for BCM2835\n", Version);
    #endif
    #ifdef BCM2711
    ChipCnt++;
-   OS_printf("PI_IOLIB Version %s Initialized for BCM2711\n", Version);
+   OS_printf("RPI_IOLIB Version %s Initialized for BCM2711\n", Version);
    #endif
    
    if (ChipCnt != 1)
    {
-      OS_printf("PI_IOLIB Initialized. \n");      
+      OS_printf("RPI_IOLIB Initialized. \n");      
    }
    
    return OS_SUCCESS;
 
-} /* End PI_IOLIB_Init() */
+} /* End RPI_IOLIB_Init() */
 

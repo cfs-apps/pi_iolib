@@ -1,18 +1,18 @@
-The bitValence pi_iolib software program is licensed under the
+The bitValence rpi_iolib software program is licensed under the
 GNU General Public License, version 3 with the Addendums listed below.
 
 Please note that the verbiage of the GPL below are copyrighted
 by the Free Software Foundation, but the instance of code to which the
-licenses refer (the bitValence pi_iolib software) is copyrighted by
+licenses refer (the bitValence rpi_iolib software) is copyrighted by
 bitValence, Inc.
 
 Also please note that the only valid versions of the GPL
-that pertain to bitValence pi_iolib are the particular versions of
+that pertain to bitValence rpi_iolib are the particular versions of
 the license reproduced below (i.e., versions 3, rather than any other
 versions of the GPL), unless explicitly otherwise stated.
 
                  bitValence GPL, version 3 LICENSE ADDENDUMS
-            bitValence pi_iolib 24 March 2022
+            bitValence rpi_iolib 24 March 2022
 
 The following addendums are made under section 7 of the GNU General
 Public License, version 3.
@@ -22,7 +22,7 @@ Public License, version 3.
 2.	Modified applications and source files must be clearly marked as
     "modified" with the modification author and company indicated
     immediately following the copyright and legal notices.
-3.	bitValence and pi_iolib are trademarks of
+3.	bitValence and rpi_iolib are trademarks of
     bitValence, Inc. and may be used for publicity purposes only in a
     manner that constitutes "fair use" under applicable trademark law,
     except with the express, written permission of bitValence.
